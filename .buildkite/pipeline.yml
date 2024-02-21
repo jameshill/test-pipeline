@@ -2,6 +2,8 @@ steps:
   - label: ":construction_worker: Build"
     command: echo "Build the rocket"
     key: build
+    agents:
+      queue: "expensive-queue"
 
   - label: ":white_check_mark: Test"
     command: echo "Test the rocket"
